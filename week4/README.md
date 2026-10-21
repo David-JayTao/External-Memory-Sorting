@@ -26,4 +26,4 @@ scripts/build.ps1 / .vscode/        构建入口
 
 核心入口：`RunGeneration`、`BuildBalancedPlan`、`PerformTwoWayMerge`、`ExecuteMergePlan`。原始输入是无头小端 int32 文件；最终结果是 Week 3 格式的单 Run 文件。空输入也生成一个空的最终 Run。
 
-完整课件位于父目录 `外存数据管理.pptx`，不是构建依赖。Git `main` / `week4-v1.0` 保存完成基线，仅本地管理。
+完整课件位于父目录 `外存数据管理.pptx`，不是构建依赖。Git `week4-v1.0` 保存首次完成基线，`main` / `week4-v1.0.1` 保存统一代码格式后的交付版本，仅本地管理。`.clang-format` 提供四空格缩进及 100 列格式配置，格式工具不是编译依赖。
