@@ -1,0 +1,7 @@
+/build*/
+/.tools/
+*.runs
+/CMakeUserPresets.json
+/.cache/
+*.user
+*.log
