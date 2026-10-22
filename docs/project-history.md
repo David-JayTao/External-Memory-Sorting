@@ -86,3 +86,7 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 | 学习文档 | week5/docs/week5_explanation.md | 页码、直观示例、结构职责、调用链、复杂度、边界和 5 道思考题 |
 
 上述测试来自本次迁移后执行；未使用旧测试结果替代。本次无需修改算法或测试预期。开发分支保留真实导入及检查提交，随后以 --no-ff 合入 main，不 squash、不改写原始开发提交。
+
+### 切换前的根 README 改动
+
+最终检查发现根 README 相对首次备份多了一行 `1 `。未推断其归属，也未丢弃：当前完整字节保存在外部 `backups/root-readme-precutover.md`，公开的文本快照见 [迁移前 README](migration/pre-monorepo-readme.md)。这是迁移期间发现的工作区改动，单独记入迁移提交，不伪装成旧历史。所有周的源码、测试、脚本和 CMake 文件逐 blob 对照一致。
