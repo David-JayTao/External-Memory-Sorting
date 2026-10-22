@@ -8,7 +8,7 @@ C++17 数据结构课程项目：块缓冲文件 I/O、外排序、归并计划�
 
 - Week 3：已完成，迁移后的 Debug/Release 测试和演示已通过；Header/Directory/Data、多 Run、Scan/Put/Search。
 - Week 4：已完成，迁移后的 Debug/Release 测试和演示已通过；分批内排、流式二路归并、递归计划树。
-- Week 5：暂在开发流程中；用户授权检查并完成全部内容，通过实现、测试、文档检查后再合入 main。
+- Week 5：实现、测试与文档检查已通过；迁移后 Debug/Release 全部通过，准备合入 main 并在最终路径复验。
 
 ## 环境与构建
 
@@ -41,3 +41,23 @@ main 按顺序接收稳定的 Week 3、4。Week 5 先导入 feat/week5-pipeline�
 正式 annotated 标签 week3-v1.0、week4-v1.0、week5-v1.0 只在对应阶段验证后建立，指向不同阶段的真实稳定提交。原标签保存在本地 legacy/weekN/ 命名空间；映射公开，不冒充新的验收结果。
 
 迁移记录、备份恢复与真实提交映射见 [项目历史](docs/project-history.md)。唯一远程为 https://github.com/David-JayTao/External-Memory-Sorting 。
+
+## 项目目录
+
+```text
+.git/                       唯一 Git 元数据目录
+README.md / .gitignore
+.vscode/tasks.json          根目录构建任务
+ docs/project-history.md    迁移、里程碑与实际验证记录
+ docs/migration/            提交映射与机器可读验证摘要
+week3/                      文件格式与块缓冲
+week4/                      初始 Run 与二路归并计划
+week5/                      败者树、置换选择与三线程流水线
+```
+
+各周都有 include、src、tests、docs、scripts、CMakeLists.txt 和 README。源代码没有跨周构建依赖。
+
+- [Week 3 讲解](week3/docs/week3_explanation.md)
+- [Week 4 讲解](week4/docs/week4_explanation.md)
+- [Week 5 讲解](week5/docs/week5_explanation.md)
+- [迁移后测试记录](docs/migration/validation.json)

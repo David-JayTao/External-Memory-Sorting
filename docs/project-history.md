@@ -62,3 +62,27 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 
 - Debug：退出码 0，2/2 测试通过；开始于 2026-10-22T12:23:25.326356+09:00，脚本总耗时 19.39 秒。
 - Release：退出码 0，2/2 测试通过；开始于 2026-10-22T12:23:44.721569+09:00，脚本总耗时 24.83 秒。
+
+### week5：临时 monorepo 重新构建与验证
+
+执行 `powershell -NoProfile -ExecutionPolicy Bypass -File week5/scripts/build.ps1 -Configuration Debug -Demo`，以及同脚本 `-Configuration Release`。脚本实际运行 CMake 配置、编译和 CTest；原始日志保存在外部备份 audit 目录。
+
+- Debug：退出码 0，4/4 测试通过；开始于 2026-10-22T12:25:09.618486+09:00，脚本总耗时 31.13 秒。
+- Release：退出码 0，4/4 测试通过；开始于 2026-10-22T12:25:40.749561+09:00，脚本总耗时 35.41 秒。
+
+### Week 5 完成度核验
+
+依据用户后续“检查、补齐并完成全部整合”的授权，核查以下内容后通过技术验收：
+
+| 要求 | 实现位置 | 本次验证 |
+|---|---|---|
+| std::thread/join | advanced.cpp、pipeline.cpp | join 可见性示例及三线程实际执行 |
+| 可复用最小败者树 | loser_tree.hpp | 2,460 次冠军替换与独立最小值 oracle |
+| 置换选择与活跃/冻结管理 | replacement_core.hpp、replacement.cpp | 15 组数据模式、有序性与多重集守恒 |
+| 最优二路归并树 | advanced.cpp | 小规模穷举所有配对顺序；115 vs 212 代价对照 |
+| 基础读/算/写流水线 | bounded_queue.hpp、pipeline.cpp | 21 组串行字节一致；有界队列与 9 次故障注入 |
+| 异常和资源结束 | pipeline.cpp | 保存首个异常、取消两队列、join 全部线程及失败产物清理 |
+| 完整外排序 | sort.cpp 与 pipeline.cpp | 100,000 条记录的公式 oracle |
+| 学习文档 | week5/docs/week5_explanation.md | 页码、直观示例、结构职责、调用链、复杂度、边界和 5 道思考题 |
+
+上述测试来自本次迁移后执行；未使用旧测试结果替代。本次无需修改算法或测试预期。开发分支保留真实导入及检查提交，随后以 --no-ff 合入 main，不 squash、不改写原始开发提交。

@@ -52,5 +52,37 @@
       "2/2 Test #2: week4_sort .......................   Passed    6.41 sec"
     ],
     "local_log": "stage-week4-week4-Release.log"
+  },
+  {
+    "phase": "temporary monorepo",
+    "week": "week5",
+    "configuration": "Debug",
+    "started_at": "2026-10-22T12:25:09.618486+09:00",
+    "exit_code": 0,
+    "tests_passed": 4,
+    "script_seconds": 31.13,
+    "test_lines": [
+      "1/4 Test #1: week3_storage ....................   Passed    2.09 sec",
+      "2/4 Test #2: week4_sort .......................   Passed    6.44 sec",
+      "3/4 Test #3: week5_serial .....................   Passed    3.48 sec",
+      "4/4 Test #4: week5_pipeline ...................   Passed    2.27 sec"
+    ],
+    "local_log": "stage-week5-week5-Debug.log"
+  },
+  {
+    "phase": "temporary monorepo",
+    "week": "week5",
+    "configuration": "Release",
+    "started_at": "2026-10-22T12:25:40.749561+09:00",
+    "exit_code": 0,
+    "tests_passed": 4,
+    "script_seconds": 35.41,
+    "test_lines": [
+      "1/4 Test #1: week3_storage ....................   Passed    1.54 sec",
+      "2/4 Test #2: week4_sort .......................   Passed    7.68 sec",
+      "3/4 Test #3: week5_serial .....................   Passed    2.78 sec",
+      "4/4 Test #4: week5_pipeline ...................   Passed    2.32 sec"
+    ],
+    "local_log": "stage-week5-week5-Release.log"
   }
 ]
