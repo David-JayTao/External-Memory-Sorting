@@ -1,0 +1,29 @@
+# Local build outputs and toolchains
+/.tools/
+/artifacts/
+/.local/
+**/build/
+**/build-*/
+**/CMakeFiles/
+**/CMakeCache.txt
+*.exe
+*.dll
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+*.log
+# Private course material; preserved locally, never published
+*.ppt
+*.pptx
+*.pdf
+**/docs/ppt_evidence/
+# Machine-local editor and credentials
+/.vscode/settings.json
+**/CMakeUserPresets.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key

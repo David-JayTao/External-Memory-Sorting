@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Week 3: build, test and demo",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/week3/scripts/build.ps1",
+        "-Configuration",
+        "Debug",
+        "-Demo"
+      ],
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "Week 4: build, test and demo",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/week4/scripts/build.ps1",
+        "-Configuration",
+        "Debug",
+        "-Demo"
+      ],
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "Week 5: build, test and demo",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/week5/scripts/build.ps1",
+        "-Configuration",
+        "Debug",
+        "-Demo"
+      ],
+      "problemMatcher": "$gcc"
+    }
+  ]
+}

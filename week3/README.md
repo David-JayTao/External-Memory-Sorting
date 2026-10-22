@@ -51,16 +51,6 @@ docs/
 
 `build/` 是生成结果；`.tools/` 是便携构建工具，不应提交到版本库。源码执行时没有第三方库依赖。
 
-## Git 管理
+## Git 管理（迁移后）
 
-本目录是独立 Git 仓库，使用 `main` 分支；`week3-v1.0` 标记可运行基线。源码、测试、文档、课件节选与 VS Code 任务纳入版本管理，工具和生成文件不入库。完整 PPT 位于父目录，独立检出仓库不包含完整课件，构建不依赖它。
-
-VS Code 请打开本目录 `week3/`，再使用 Git 面板或 `Ctrl+Shift+B`。当前仅本地版本管理，未配置远程或推送。
-
-```powershell
-git status
-git log --oneline --decorate
-git diff
-```
-
-2026-10-22 整理前的构建结果移至 `../artifacts/week3-initial-build/`，旧 CMake 缓存仅作历史记录。构建脚本在本仓库 `build/` 下重新生成。
+本目录是统一仓库的普通子目录，所有提交在根目录管理。正式里程碑和恢复记录见 [项目历史](../docs/project-history.md)。旧独立仓库及标签已完整备份。完整课件和提取图片不进入公开仓库。

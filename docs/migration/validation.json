@@ -1,0 +1,28 @@
+[
+  {
+    "phase": "temporary monorepo",
+    "week": "week3",
+    "configuration": "Debug",
+    "started_at": "2026-10-22T12:12:49.310167+09:00",
+    "exit_code": 0,
+    "tests_passed": 1,
+    "script_seconds": 44.52,
+    "test_lines": [
+      "1/1 Test #1: week3_storage ....................   Passed    1.73 sec"
+    ],
+    "local_log": "stage-week3-week3-Debug.log"
+  },
+  {
+    "phase": "temporary monorepo",
+    "week": "week3",
+    "configuration": "Release",
+    "started_at": "2026-10-22T12:19:09.144106+09:00",
+    "exit_code": 0,
+    "tests_passed": 1,
+    "script_seconds": 37.56,
+    "test_lines": [
+      "1/1 Test #1: week3_storage ....................   Passed    1.37 sec"
+    ],
+    "local_log": "stage-week3-week3-Release.log"
+  }
+]

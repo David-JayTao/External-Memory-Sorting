@@ -1,0 +1,62 @@
+{
+  "week3": {
+    "old_head": "a0beb57845f9f2bca50f6661331431991c0d1d93",
+    "new_head": "67ce3a2af0223ad06ebbc9d2d0327162ae70b54a",
+    "commits": {
+      "a0beb57845f9f2bca50f6661331431991c0d1d93": "67ce3a2af0223ad06ebbc9d2d0327162ae70b54a"
+    },
+    "tags": [
+      {
+        "old_tag": "week3-v1.0",
+        "old_object": "28431fb84c045f24a4ebca699f1bb700c54c70a2",
+        "old_commit": "a0beb57845f9f2bca50f6661331431991c0d1d93",
+        "new_tag": "legacy/week3/week3-v1.0",
+        "new_object": "401ea7fdb2b2042c90155e04b10fc748bab5ac79",
+        "new_commit": "67ce3a2af0223ad06ebbc9d2d0327162ae70b54a"
+      }
+    ]
+  },
+  "week4": {
+    "old_head": "543fc9bc8aebb26d7c776e4e0011e3579f663ef0",
+    "new_head": "7327d2ad8f6f97dbe3f4cbb1b4ce61c47a6c7de8",
+    "commits": {
+      "3aaae799d82122d57991dbf8120a0d72e83480d2": "51508699ea69dde1b2b077d22442d758719aef8a",
+      "543fc9bc8aebb26d7c776e4e0011e3579f663ef0": "7327d2ad8f6f97dbe3f4cbb1b4ce61c47a6c7de8"
+    },
+    "tags": [
+      {
+        "old_tag": "week4-v1.0",
+        "old_object": "cb51d21b6ba996a8e9e1bbb0229214b8a737bde6",
+        "old_commit": "3aaae799d82122d57991dbf8120a0d72e83480d2",
+        "new_tag": "legacy/week4/week4-v1.0",
+        "new_object": "9048566c1be9e988041e65ca24b6e19e0ba8c46a",
+        "new_commit": "51508699ea69dde1b2b077d22442d758719aef8a"
+      },
+      {
+        "old_tag": "week4-v1.0.1",
+        "old_object": "cea1bd00ddd28425874ac9250e3af5aff93e04ba",
+        "old_commit": "543fc9bc8aebb26d7c776e4e0011e3579f663ef0",
+        "new_tag": "legacy/week4/week4-v1.0.1",
+        "new_object": "7f10554be1e86c015a42583256b043e1c257bfb8",
+        "new_commit": "7327d2ad8f6f97dbe3f4cbb1b4ce61c47a6c7de8"
+      }
+    ]
+  },
+  "week5": {
+    "old_head": "c4ea84100a7ac85c04ec4e4a42823432395c5cfa",
+    "new_head": "9cb6a768f7a1afc91396d16b8b8d47df633f66ca",
+    "commits": {
+      "c4ea84100a7ac85c04ec4e4a42823432395c5cfa": "9cb6a768f7a1afc91396d16b8b8d47df633f66ca"
+    },
+    "tags": [
+      {
+        "old_tag": "week5-v1.0",
+        "old_object": "f39600a575155dc3b3264e93e5e45965d07c1186",
+        "old_commit": "c4ea84100a7ac85c04ec4e4a42823432395c5cfa",
+        "new_tag": "legacy/week5/week5-v1.0",
+        "new_object": "162aa8e59cfe995f060571a770b8e4e5bd31d3be",
+        "new_commit": "9cb6a768f7a1afc91396d16b8b8d47df633f66ca"
+      }
+    ]
+  }
+}
