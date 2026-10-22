@@ -8,7 +8,7 @@ C++17 数据结构课程项目：块缓冲文件 I/O、外排序、归并计划�
 
 - Week 3：已完成，迁移后的 Debug/Release 测试和演示已通过；Header/Directory/Data、多 Run、Scan/Put/Search。
 - Week 4：已完成，迁移后的 Debug/Release 测试和演示已通过；分批内排、流式二路归并、递归计划树。
-- Week 5：实现、测试与文档检查已通过；迁移后 Debug/Release 全部通过，准备合入 main 并在最终路径复验。
+- Week 5：已完成并合入 main；最终工作区全新构建的 Debug/Release 全部通过，含串行和三线程流水线测试。
 
 ## 环境与构建
 
@@ -36,7 +36,7 @@ Week 4/5 替换目录名即可。完整课件、便携工具、构建产物只�
 
 ## 分支与里程碑
 
-main 按顺序接收稳定的 Week 3、4。Week 5 先导入 feat/week5-pipeline，完成实现、测试及文档检查后，再按用户最新授权合入 main，并保留开发分支便于追溯。
+main 已按顺序整合 Week 3、4、5。Week 5 经 feat/week5-pipeline 导入、实现与文档核验、Debug/Release 测试后，以合并提交进入 main；开发分支继续保留用于追溯。
 
 正式 annotated 标签 week3-v1.0、week4-v1.0、week5-v1.0 只在对应阶段验证后建立，指向不同阶段的真实稳定提交。原标签保存在本地 legacy/weekN/ 命名空间；映射公开，不冒充新的验收结果。
 

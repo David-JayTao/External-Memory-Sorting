@@ -84,5 +84,91 @@
       "4/4 Test #4: week5_pipeline ...................   Passed    2.32 sec"
     ],
     "local_log": "stage-week5-week5-Release.log"
+  },
+  {
+    "phase": "final workspace fresh build",
+    "week": "week3",
+    "configuration": "Debug",
+    "started_at": "2026-10-22T12:43:49.747596+09:00",
+    "exit_code": 0,
+    "tests_passed": 1,
+    "script_seconds": 21.84,
+    "test_lines": [
+      "1/1 Test #1: week3_storage ....................   Passed    1.57 sec"
+    ],
+    "local_log": "final-workspace-week3-Debug.log"
+  },
+  {
+    "phase": "final workspace fresh build",
+    "week": "week3",
+    "configuration": "Release",
+    "started_at": "2026-10-22T12:44:11.589595+09:00",
+    "exit_code": 0,
+    "tests_passed": 1,
+    "script_seconds": 13.69,
+    "test_lines": [
+      "1/1 Test #1: week3_storage ....................   Passed    1.42 sec"
+    ],
+    "local_log": "final-workspace-week3-Release.log"
+  },
+  {
+    "phase": "final workspace fresh build",
+    "week": "week4",
+    "configuration": "Debug",
+    "started_at": "2026-10-22T12:44:25.278025+09:00",
+    "exit_code": 0,
+    "tests_passed": 2,
+    "script_seconds": 21.68,
+    "test_lines": [
+      "1/2 Test #1: week3_storage ....................   Passed    1.70 sec",
+      "2/2 Test #2: week4_sort .......................   Passed    7.81 sec"
+    ],
+    "local_log": "final-workspace-week4-Debug.log"
+  },
+  {
+    "phase": "final workspace fresh build",
+    "week": "week4",
+    "configuration": "Release",
+    "started_at": "2026-10-22T12:44:46.956298+09:00",
+    "exit_code": 0,
+    "tests_passed": 2,
+    "script_seconds": 18.1,
+    "test_lines": [
+      "1/2 Test #1: week3_storage ....................   Passed    1.43 sec",
+      "2/2 Test #2: week4_sort .......................   Passed    5.67 sec"
+    ],
+    "local_log": "final-workspace-week4-Release.log"
+  },
+  {
+    "phase": "final workspace fresh build",
+    "week": "week5",
+    "configuration": "Debug",
+    "started_at": "2026-10-22T12:45:05.059736+09:00",
+    "exit_code": 0,
+    "tests_passed": 4,
+    "script_seconds": 27.93,
+    "test_lines": [
+      "1/4 Test #1: week3_storage ....................   Passed    1.60 sec",
+      "2/4 Test #2: week4_sort .......................   Passed    6.73 sec",
+      "3/4 Test #3: week5_serial .....................   Passed    3.19 sec",
+      "4/4 Test #4: week5_pipeline ...................   Passed    3.76 sec"
+    ],
+    "local_log": "final-workspace-week5-Debug.log"
+  },
+  {
+    "phase": "final workspace fresh build",
+    "week": "week5",
+    "configuration": "Release",
+    "started_at": "2026-10-22T12:45:32.993113+09:00",
+    "exit_code": 0,
+    "tests_passed": 4,
+    "script_seconds": 29.77,
+    "test_lines": [
+      "1/4 Test #1: week3_storage ....................   Passed    1.27 sec",
+      "2/4 Test #2: week4_sort .......................   Passed    6.55 sec",
+      "3/4 Test #3: week5_serial .....................   Passed    3.17 sec",
+      "4/4 Test #4: week5_pipeline ...................   Passed    3.47 sec"
+    ],
+    "local_log": "final-workspace-week5-Release.log"
   }
 ]

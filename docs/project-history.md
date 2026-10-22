@@ -47,7 +47,7 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 
 ## 当前限制
 
-尚需完成临时合并测试、最终路径工作区切换、源文件一致性与敏感扫描。验证通过前不发布。此次重点为仓库和文档，不进行算法重构。
+临时整合和最终工作区均已通过 Debug/Release 构建与测试。本次没有修改算法、测试预期或构建脚本。验证环境为 Windows GCC 16.2.0，未执行 MSVC 或 ThreadSanitizer，不能据此宣称这些环境也通过。远程发布的实测回执在完成后追加。
 
 ### week3：临时 monorepo 重新构建与验证
 
@@ -90,3 +90,20 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 ### 切换前的根 README 改动
 
 最终检查发现根 README 相对首次备份多了一行 `1 `。未推断其归属，也未丢弃：当前完整字节保存在外部 `backups/root-readme-precutover.md`，公开的文本快照见 [迁移前 README](migration/pre-monorepo-readme.md)。这是迁移期间发现的工作区改动，单独记入迁移提交，不伪装成旧历史。所有周的源码、测试、脚本和 CMake 文件逐 blob 对照一致。
+
+## 最终工作区切换与复验
+
+三个原始 `.git` 已整体移动到外部 `backups/original-git/weekN.git`；原 build 目录移至 `backups/pre-cutover-build/weekN`。原始 HEAD 再次核对一致。各 week 的 `git rev-parse --show-toplevel` 均指向项目根目录，无嵌套仓库或 gitlink。根目录本地配置、工具与课件保留，但不进入公开历史。
+
+最终路径使用与前述相同的原始脚本进行全新配置、编译、CTest；Debug 还运行演示。CTest 的直接入口为 `ctest --test-dir weekN/build/debug --output-on-failure`（Release 使用 release）。完整日志保留在外部 `audit/`。
+
+| Week | 配置 | 开始时间 | 测试 | 脚本耗时 |
+|---|---|---|---|---|
+| week3 | Debug | 2026-10-22T12:43:49.747596+09:00 | 1/1 | 21.84 s |
+| week3 | Release | 2026-10-22T12:44:11.589595+09:00 | 1/1 | 13.69 s |
+| week4 | Debug | 2026-10-22T12:44:25.278025+09:00 | 2/2 | 21.68 s |
+| week4 | Release | 2026-10-22T12:44:46.956298+09:00 | 2/2 | 18.1 s |
+| week5 | Debug | 2026-10-22T12:45:05.059736+09:00 | 4/4 | 27.93 s |
+| week5 | Release | 2026-10-22T12:45:32.993113+09:00 | 4/4 | 29.77 s |
+
+当前阶段已满足 Week 5 的功能、测试和讲解文档要求；正式 `week5-v1.0` 将标记本次最终验证提交。Week 3/4 正式标签保留各自阶段，不移动到最新提交。
