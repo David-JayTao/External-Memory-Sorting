@@ -1,6 +1,6 @@
 # Week 5：置换选择、最优归并与三线程流水线
 
-独立 C++17 / CMake 仓库，复用 Week 4 `3aaae79` 的外排序组件，保留 Week 3/4 回归测试；无需在构建时引用其他 Week 的目录。
+统一仓库中的独立 C++17 / CMake 工程，复用 Week 4 `3aaae79` 的外排序组件，保留 Week 3/4 回归测试；无需在构建时引用其他 Week 的目录。
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1 -Configuration Debug -Demo
