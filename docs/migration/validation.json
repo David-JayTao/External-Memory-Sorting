@@ -24,5 +24,33 @@
       "1/1 Test #1: week3_storage ....................   Passed    1.37 sec"
     ],
     "local_log": "stage-week3-week3-Release.log"
+  },
+  {
+    "phase": "temporary monorepo",
+    "week": "week4",
+    "configuration": "Debug",
+    "started_at": "2026-10-22T12:23:25.326356+09:00",
+    "exit_code": 0,
+    "tests_passed": 2,
+    "script_seconds": 19.39,
+    "test_lines": [
+      "1/2 Test #1: week3_storage ....................   Passed    0.58 sec",
+      "2/2 Test #2: week4_sort .......................   Passed    4.79 sec"
+    ],
+    "local_log": "stage-week4-week4-Debug.log"
+  },
+  {
+    "phase": "temporary monorepo",
+    "week": "week4",
+    "configuration": "Release",
+    "started_at": "2026-10-22T12:23:44.721569+09:00",
+    "exit_code": 0,
+    "tests_passed": 2,
+    "script_seconds": 24.83,
+    "test_lines": [
+      "1/2 Test #1: week3_storage ....................   Passed    1.40 sec",
+      "2/2 Test #2: week4_sort .......................   Passed    6.41 sec"
+    ],
+    "local_log": "stage-week4-week4-Release.log"
   }
 ]

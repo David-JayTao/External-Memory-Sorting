@@ -1,6 +1,6 @@
 # Week 4：基于归并计划树的外排序
 
-独立 C++17 / CMake 仓库。复制并复用 Week 3 `a0beb57` 的文件/缓冲组件，保留其回归测试；不需要在构建时引用 week3 目录。
+统一仓库中的独立 C++17 / CMake 工程。复制并复用 Week 3 `a0beb57` 的文件/缓冲组件，保留其回归测试；不需要在构建时引用 week3 目录。
 
 在 VS Code 打开本目录，Ctrl+Shift+B；或运行：
 
@@ -26,4 +26,4 @@ scripts/build.ps1 / .vscode/        构建入口
 
 核心入口：`RunGeneration`、`BuildBalancedPlan`、`PerformTwoWayMerge`、`ExecuteMergePlan`。原始输入是无头小端 int32 文件；最终结果是 Week 3 格式的单 Run 文件。空输入也生成一个空的最终 Run。
 
-完整课件位于父目录 `外存数据管理.pptx`，不是构建依赖。Git `week4-v1.0` 保存首次完成基线，`main` / `week4-v1.0.1` 保存统一代码格式后的交付版本，仅本地管理。`.clang-format` 提供四空格缩进及 100 列格式配置，格式工具不是编译依赖。
+完整课件位于父目录 `外存数据管理.pptx`，不是构建依赖。原独立仓库标签已保存为 `legacy/week4/*`；新的正式 `week4-v1.0` 指向包含 Week 3/4 且通过迁移后测试的 monorepo 状态。所有开发在根仓库管理，详见 [项目历史](../docs/project-history.md)。`.clang-format` 提供四空格缩进及 100 列格式配置，格式工具不是编译依赖。

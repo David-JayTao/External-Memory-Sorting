@@ -55,3 +55,10 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 
 - Debug：退出码 0，1/1 测试通过；开始于 2026-10-22T12:12:49.310167+09:00，脚本总耗时 44.52 秒。
 - Release：退出码 0，1/1 测试通过；开始于 2026-10-22T12:19:09.144106+09:00，脚本总耗时 37.56 秒。
+
+### week4：临时 monorepo 重新构建与验证
+
+执行 `powershell -NoProfile -ExecutionPolicy Bypass -File week4/scripts/build.ps1 -Configuration Debug -Demo`，以及同脚本 `-Configuration Release`。脚本实际运行 CMake 配置、编译和 CTest；原始日志保存在外部备份 audit 目录。
+
+- Debug：退出码 0，2/2 测试通过；开始于 2026-10-22T12:23:25.326356+09:00，脚本总耗时 19.39 秒。
+- Release：退出码 0，2/2 测试通过；开始于 2026-10-22T12:23:44.721569+09:00，脚本总耗时 24.83 秒。
