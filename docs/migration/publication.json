@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-22T03:49:04.182415+00:00",
+  "url": "https://github.com/David-JayTao/External-Memory-Sorting",
+  "origin": "https://github.com/David-JayTao/External-Memory-Sorting.git",
+  "visibility": "public",
+  "default_branch": "main",
+  "remote_before": "empty; authenticated API and git ls-remote verified",
+  "push": "normal atomic; no force; only main, feature branch and three formal tags",
+  "refs": {
+    "refs/heads/main": "786cefaa82e16218ffc1446ae29dab3184b79c4b",
+    "refs/heads/feat/week5-pipeline": "749877e647c0d21a20b5abb179f5a50333ea8285",
+    "refs/tags/week3-v1.0": "22ffa8ccacfe987047a91b238ae6a4677a2668dc",
+    "refs/tags/week4-v1.0": "7217b0b93c23d41cf47028041dc923739286a5c1",
+    "refs/tags/week5-v1.0": "59770b8f035e576cfc3c542c6a2fcf7a06236376"
+  },
+  "tag_commits": {
+    "week3-v1.0": "13ebb2202033634364a16a4a2d760bd1d6325f39",
+    "week4-v1.0": "4f664113583027f1701411b14ecda732e566a304",
+    "week5-v1.0": "786cefaa82e16218ffc1446ae29dab3184b79c4b"
+  },
+  "published_files_verified": [
+    "README.md",
+    "docs/project-history.md",
+    "week5/docs/week5_explanation.md"
+  ],
+  "scope": "First successful publication snapshot; later main commits may append publication documentation without moving milestone tags."
+}

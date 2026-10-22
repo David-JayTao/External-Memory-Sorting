@@ -6,7 +6,7 @@
 
 迁移前均为 main 分支、干净工作区、无 remote；真实提交数为 1、2、1。未发现未提交或未跟踪的源码修改。原始作者名称为 David-JayTao。原提交时间及说明未修改。
 
-GitHub 指定仓库 `David-JayTao/External-Memory-Sorting` 审计为 Public，默认分支名 main，分支/标签列表为空，提交 API 返回空仓库状态。不存在需要合并的远程历史。发布前将再次确认，若远程变化则停止并重新评估。没有创建新 GitHub 仓库。
+GitHub 指定仓库 `David-JayTao/External-Memory-Sorting` 审计为 Public，默认分支名 main，分支/标签列表为空，提交 API 返回空仓库状态。不存在需要合并的远程历史。发布前已再次通过认证 API 与 git ls-remote 确认为空。没有创建新 GitHub 仓库。
 
 ## 备份及恢复
 
@@ -47,7 +47,7 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 
 ## 当前限制
 
-临时整合和最终工作区均已通过 Debug/Release 构建与测试。本次没有修改算法、测试预期或构建脚本。验证环境为 Windows GCC 16.2.0，未执行 MSVC 或 ThreadSanitizer，不能据此宣称这些环境也通过。远程发布的实测回执在完成后追加。
+临时整合和最终工作区均已通过 Debug/Release 构建与测试。本次没有修改算法、测试预期或构建脚本。验证环境为 Windows GCC 16.2.0，未执行 MSVC 或 ThreadSanitizer，不能据此宣称这些环境也通过。远程发布已成功，实测回执见本文末及 migration/publication.json。
 
 ### week3：临时 monorepo 重新构建与验证
 
@@ -95,7 +95,7 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 
 三个原始 `.git` 已整体移动到外部 `backups/original-git/weekN.git`；原 build 目录移至 `backups/pre-cutover-build/weekN`。原始 HEAD 再次核对一致。各 week 的 `git rev-parse --show-toplevel` 均指向项目根目录，无嵌套仓库或 gitlink。根目录本地配置、工具与课件保留，但不进入公开历史。
 
-最终路径使用与前述相同的原始脚本进行全新配置、编译、CTest；Debug 还运行演示。CTest 的直接入口为 `ctest --test-dir weekN/build/debug --output-on-failure`（Release 使用 release）。完整日志保留在外部 `audit/`。
+最终路径使用与前述相同的原始脚本进行全新配置、编译、CTest；Debug 还运行演示。CTest 的直接入口为 `ctest --test-dir weekN/build/Debug --output-on-failure`（Release 使用 Release）。完整日志保留在外部 `audit/`。
 
 | Week | 配置 | 开始时间 | 测试 | 脚本耗时 |
 |---|---|---|---|---|
@@ -106,4 +106,26 @@ Week 3 的 docs/ppt_evidence 从全部公开导入历史排除。工具内部 re
 | week5 | Debug | 2026-10-22T12:45:05.059736+09:00 | 4/4 | 27.93 s |
 | week5 | Release | 2026-10-22T12:45:32.993113+09:00 | 4/4 | 29.77 s |
 
-当前阶段已满足 Week 5 的功能、测试和讲解文档要求；正式 `week5-v1.0` 将标记本次最终验证提交。Week 3/4 正式标签保留各自阶段，不移动到最新提交。
+当前阶段已满足 Week 5 的功能、测试和讲解文档要求；正式 `week5-v1.0` 已标记本次最终验证提交。Week 3/4 正式标签保留各自阶段，不移动到最新提交。
+
+## 发布与最终交付
+
+2026-10-22 12:49 +09:00 已完成首次普通原子推送；账号 David-JayTao，目标为原有公开仓库 [External-Memory-Sorting](https://github.com/David-JayTao/External-Memory-Sorting)，默认分支 main，描述已按要求更新。未创建仓库、未改可见性、未 force push、未删除远程引用。推送前远程为空，无既有历史被覆盖。
+
+已发布 main、feat/week5-pipeline 和三个正式 annotated 标签；feature 是 main 的祖先，保留用于追溯。legacy 标签留在本地及备份，公开映射可查。首次发布 refs 快照见 [publication.json](migration/publication.json)，后续 main 仅增加本发布文档回执，正式标签不移动。
+
+| 正式标签 | 对应提交 | 提交时间 |
+|---|---|---|
+| week3-v1.0 | `13ebb2202033634364a16a4a2d760bd1d6325f39` | 2026-10-22T12:23:21+09:00 |
+| week4-v1.0 | `4f664113583027f1701411b14ecda732e566a304` | 2026-10-22T12:25:06+09:00 |
+| week5-v1.0 | `786cefaa82e16218ffc1446ae29dab3184b79c4b` | 2026-10-22T12:47:08+09:00 |
+
+关键合并提交：
+
+- eba75cfa38d1c5b615b37254e5e591c57145fc32 — 2026-10-22T12:23:23+09:00 — merge(migration): preserve Week 4 history under week4/
+- fd71ffd07056b9839e7ae62740193daa8e054dde — 2026-10-22T12:25:07+09:00 — merge(migration): import Week 5 development history without squashing
+- 5600b30b33103eea44348284fad0181290c4cd89 — 2026-10-22T12:28:08+09:00 — merge: integrate verified Week 5 pipeline into the complete course monorepo
+
+所有旧开发提交通过合并关系在 main 中可达；提交映射完整覆盖原始四个提交。发布前对全部可达文件进行敏感内容、课件/二进制路径和大小检查，源码与测试未被忽略，无 gitlink；公开作者邮箱统一为账号 noreply。根目录 README、项目历史及 Week 5 讲解已通过远程内容 API 验证。
+
+没有剩余的实现或迁移阻塞项。构建工具、课程材料和原始备份只在本机保留；如需换机，请另行安装编译环境，且不要把本地原始备份推送到公开仓库。
